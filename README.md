@@ -63,6 +63,13 @@ cd coningenio-website
 # Simply open index.html in your browser
 ```
 
+## Live Demo
+
+Visit the live version of the website:
+[https://coningenio-website.vercel.app/](https://coningenio-website.vercel.app/)
+
+Deployed on [Vercel](https://vercel.com/), a platform optimized for frontend frameworks and static sites.
+
 ## Browser Support
 
 - Chrome (latest)
