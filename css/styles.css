@@ -871,6 +871,47 @@ footer {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
+/* --- Error States --- */
+.error-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  width: 100%;
+}
+
+.error-container {
+  text-align: center;
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid var(--error-color);
+}
+
+.error-container i {
+  color: var(--error-color);
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.error-container p {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.error-container .retry-btn {
+  margin-top: var(--spacing-sm);
+  padding: 0.6rem 1.5rem;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .error-container {
+  background-color: rgba(255, 123, 107, 0.05);
+}
+
 /* --- Responsive Design --- */
 
 /* Tablets and medium devices */
