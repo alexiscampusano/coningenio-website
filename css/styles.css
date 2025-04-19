@@ -1067,6 +1067,22 @@ footer {
   }
 }
 
+/* iPad Air */
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 2) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero-content,
+  .hero-image {
+    max-width: 100%;
+  }
+  
+  .contact-form {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+}
+
 /* Tablet devices */
 @media only screen and (min-device-width: 820px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
   .services-grid {
