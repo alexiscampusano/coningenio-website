@@ -327,6 +327,7 @@ nav {
   font-weight: 600;
 }
 
+/* Menu toggle button - visible only on mobile */
 .menu-toggle {
   display: none;
   background: none;
@@ -334,6 +335,13 @@ nav {
   font-size: var(--text-xl);
   color: var(--text-primary);
   cursor: pointer;
+  padding: var(--spacing-xs);
+  border-radius: var(--border-radius-sm);
+  transition: background-color var(--transition-short);
+}
+
+.menu-toggle:hover {
+  background-color: var(--bg-secondary);
 }
 
 .theme-toggle {
@@ -951,6 +959,11 @@ footer {
 
 /* Mobile devices */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  /* Keep existing mobile menu styles */
   .main-menu {
     position: fixed;
     top: 70px;
